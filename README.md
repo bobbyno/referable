@@ -24,3 +24,9 @@ There are two ways to try out local changes to this template:
 
    Generate a new project.
 
+
+## Testing
+
+To generate a project and run a set of smoke tests on it, use the default `make` target.
+
+Simply run `make`.
