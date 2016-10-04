@@ -1,4 +1,4 @@
-(ns referable.build
+(ns {{namespace}}.build
   (:require [environ.core :refer [env]]
             [cheshire.core :as json]))
 
@@ -14,4 +14,4 @@
       .getName))
 
 (defn properties []
-  {:version (or (:referable-version env) (jar-name))})
+  {:version (or (:{{namespace}}-version env) (jar-name))})

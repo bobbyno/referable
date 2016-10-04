@@ -1,10 +1,10 @@
-(ns referable.api
+(ns {{namespace}}.api
   (:require [compojure.core :refer [defroutes GET]]
             [compojure.route :refer [not-found]]
             [compojure.handler :as handler]
             [ring.middleware.json :as middleware]
             [ring.util.response :refer [response]]
-            [referable.build :as build]))
+            [{{namespace}}.build :as build]))
 
 (defroutes routes
   (GET "/" [] (response (build/properties)))

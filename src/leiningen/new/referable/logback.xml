@@ -1,0 +1,5 @@
+<configuration scan="true" scanPeriod="10 seconds">
+  <include resource="stdout.xml"/>
+
+  <logger name="user" level="ALL" />
+</configuration>

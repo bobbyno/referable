@@ -1,11 +1,11 @@
-(ns referable.system
+(ns {{namespace}}.system
   (:require
    [com.stuartsierra.component :as component]
    [environ.core :refer [env]]
    [ring.component.jetty :refer [jetty-server]]
    [clojure.tools.logging :as log]
-   [referable.api :refer [api]]
-   [referable.build :as build])
+   [{{namespace}}.api :refer [api]]
+   [{{namespace}}.build :as build])
   (:gen-class))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
