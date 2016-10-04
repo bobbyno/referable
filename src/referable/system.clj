@@ -3,7 +3,9 @@
    [com.stuartsierra.component :as component]
    [environ.core :refer [env]]
    [ring.component.jetty :refer [jetty-server]]
-   [referable.api :refer [api]])
+   [clojure.tools.logging :as log]
+   [referable.api :refer [api]]
+   [referable.build :as build])
   (:gen-class))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -46,4 +48,4 @@
   [& [port]]
   (let [port (Integer. (or port (env :port) 8080))]
     (go port)
-    (println "Server started...")))
+    (log/info (:version (build/properties)))))
