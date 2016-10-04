@@ -1,6 +1,8 @@
 (defproject referable "0.1.0-SNAPSHOT"
   :description "A RESTful API reference implementation"
   :url "https://www.github.com/bobbyno/referable"
+  :license {:name "Apache License, Version 2.0"
+            :url "http://www.apache.org/licenses/LICENSE-2.0.html"}
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [com.stuartsierra/component "0.3.1"]
