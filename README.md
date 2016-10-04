@@ -1,6 +1,7 @@
-# Referable lein-template
+# Referable
+### A lein template for a RESTful API in Clojure
 
-Generate a new referable API project. Referable is a simple reference for RESTful API's in Clojure.
+Generates a new RESTful API project ready for deployment as an uberjar or a Docker container.
 
 ## Usage
 
