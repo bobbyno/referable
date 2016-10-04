@@ -10,14 +10,14 @@ To start a web server for the application, run:
 
     lein ring server
 
-## Running as an Uberjar
+## Testing
 
-    lein uberjar
-    make run
+    make all
 
-The port defaults to 8080.
+This target builds an uberjar, starts it, then verifies that the top-level endpoint responds with a 200.
 
-## Smoke Testing
+## Docker
 
-After the server is started, ensure it's responsive with `make smoketest` or
-`PORT=xxxx make smoketest` if you customized the port.
+    make docker-build
+    make docker-run
+    make test-docker
